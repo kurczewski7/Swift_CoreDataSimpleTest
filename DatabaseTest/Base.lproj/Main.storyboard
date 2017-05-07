@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TestViewController" customModule="DatabaseTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dSe-uS-55J">
+                                <rect key="frame" x="75" y="106" width="240" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="Rgp-NU-4N6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2b-oK-h0T">
+                                <rect key="frame" x="179" y="484" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="kliknietoKlawisz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m5L-T1-0B4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uas-S1-Klb">
+                                <rect key="frame" x="36" y="423" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCo-Gt-CPI">
+                                <rect key="frame" x="36" y="372" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9n-fA-8PL">
+                                <rect key="frame" x="103" y="484" width="38" height="30"/>
+                                <state key="normal" title="Kasuj"/>
+                                <connections>
+                                    <action selector="kasujButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpc-lF-dCS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIY-cY-hc3">
+                                <rect key="frame" x="36" y="484" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZh-A1-oLg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z56-Uo-vdh">
+                                <rect key="frame" x="233" y="484" width="41" height="30"/>
+                                <state key="normal" title="Policz"/>
+                                <connections>
+                                    <action selector="policzButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Hk-4e-a2u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPw-pK-pmF">
+                                <rect key="frame" x="75" y="535" width="62" height="30"/>
+                                <state key="normal" title="Add data"/>
+                                <connections>
+                                    <action selector="addDataButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OuL-po-ku0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egl-a1-Ggb">
+                                <rect key="frame" x="173" y="535" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uas-S1-Klb" secondAttribute="trailing" constant="20" id="3pK-gJ-V5h"/>
+                            <constraint firstItem="hPw-pK-pmF" firstAttribute="baseline" secondItem="Egl-a1-Ggb" secondAttribute="baseline" id="7wq-re-k3y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z2b-oK-h0T" secondAttribute="bottom" constant="153" id="AVp-zb-9NU"/>
+                            <constraint firstItem="w9n-fA-8PL" firstAttribute="baseline" secondItem="Z2b-oK-h0T" secondAttribute="baseline" id="AZo-1o-oYR"/>
+                            <constraint firstItem="RCo-Gt-CPI" firstAttribute="top" secondItem="dSe-uS-55J" secondAttribute="bottom" constant="44" id="Al3-r4-4nq"/>
+                            <constraint firstItem="Uas-S1-Klb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="M71-9X-D1q"/>
+                            <constraint firstItem="Z2b-oK-h0T" firstAttribute="top" secondItem="Uas-S1-Klb" secondAttribute="bottom" constant="40" id="NTP-Ab-drk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dSe-uS-55J" secondAttribute="trailing" constant="44" id="OaS-ua-cWg"/>
+                            <constraint firstItem="Egl-a1-Ggb" firstAttribute="leading" secondItem="hPw-pK-pmF" secondAttribute="trailing" constant="36" id="PK9-Uc-bK7"/>
+                            <constraint firstItem="RCo-Gt-CPI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="SSc-wb-SsC"/>
+                            <constraint firstItem="Z56-Uo-vdh" firstAttribute="leading" secondItem="Z2b-oK-h0T" secondAttribute="trailing" constant="22" id="UCt-pb-2hV"/>
+                            <constraint firstItem="dSe-uS-55J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="VCx-Gm-hOk"/>
+                            <constraint firstItem="Z2b-oK-h0T" firstAttribute="leading" secondItem="w9n-fA-8PL" secondAttribute="trailing" constant="38" id="cvA-hi-gQu"/>
+                            <constraint firstItem="dSe-uS-55J" firstAttribute="centerX" secondItem="Z2b-oK-h0T" secondAttribute="centerX" id="dzF-mH-03K"/>
+                            <constraint firstItem="Z56-Uo-vdh" firstAttribute="baseline" secondItem="Z2b-oK-h0T" secondAttribute="baseline" id="fRM-xu-Wky"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RCo-Gt-CPI" secondAttribute="trailing" constant="20" id="guG-W8-VkL"/>
+                            <constraint firstItem="yIY-cY-hc3" firstAttribute="leading" secondItem="Uas-S1-Klb" secondAttribute="leading" id="hG3-XM-fjn"/>
+                            <constraint firstItem="dSe-uS-55J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="86" id="nro-U1-GKO"/>
+                            <constraint firstItem="hPw-pK-pmF" firstAttribute="leading" secondItem="dSe-uS-55J" secondAttribute="leading" id="v2X-Gi-m80"/>
+                            <constraint firstItem="hPw-pK-pmF" firstAttribute="top" secondItem="yIY-cY-hc3" secondAttribute="bottom" constant="21" id="x22-IT-gpA"/>
+                            <constraint firstItem="yIY-cY-hc3" firstAttribute="baseline" secondItem="w9n-fA-8PL" secondAttribute="baseline" id="xWn-0j-ppE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="etykietaLabel" destination="RCo-Gt-CPI" id="KMA-af-BBr"/>
+                        <outlet property="etykietaLabel2" destination="Uas-S1-Klb" id="EEm-uL-Kt8"/>
+                        <outlet property="klawiszButtopn" destination="Z2b-oK-h0T" id="hHP-lX-XRg"/>
+                        <outlet property="obrazekImage" destination="dSe-uS-55J" id="t5h-XD-qt7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
